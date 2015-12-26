@@ -12,21 +12,24 @@
  
 </head>
 <body>
-    <div id="wrapper">
-        <div class="container">
-            <div class="row" style="border-bottom: 1px black solid;">
-                <div class="col-md-6 col-lg-6">
-                    <h1><a href="/">My Todo List</a></h1>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <h4><a href="create.html">Create Task</a> | <a href="#">Create Project</a></h4>
-                </div>
+<div id="wrapper">
+    <div class="container">
+        <div class="row" style="border-bottom: 1px black solid;">
+            <div class="col-md-6 col-lg-6">
+                <h1><a href="/">My Todo List</a>
+                </h1>
             </div>
-            <div class="row">
-                  <div ng-view></div>
+            <div class="col-md-6 col-lg-6">
+                <h4><a href="create.html">Create Task</a> | <a href="#">Create Project</a></h4>
             </div>
         </div>
+        <div class="row">
+            <div ng-view></div>
+        </div>
     </div>
+</div>
+
+                <script src="libs/jquery/jquery.min.js"></script>
                 <script src="libs/angular/angular.min.js"></script>
                 <script src="libs/angular/angular-route.min.js"></script>
                 <script src="libs/angular/angular-animate.min.js"></script>

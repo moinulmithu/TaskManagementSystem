@@ -80,6 +80,7 @@
     <Content Include="libs\angular\angular-route.min.js" />
     <Content Include="libs\angular\angular.min.js" />
     <Content Include="libs\bootstrap\bootstrap.min.js" />
+    <Content Include="libs\jquery\jquery.min.js" />
     <Content Include="scripts\dashboard\dashboard.controller.js" />
     <Content Include="scripts\projects\projectdetail.controller.js" />
     <Content Include="scripts\projects\projects.controller.js" />
