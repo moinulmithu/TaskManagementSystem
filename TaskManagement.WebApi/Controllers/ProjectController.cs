@@ -11,11 +11,21 @@ namespace TaskManagement.WebApi.Controllers
 {
     public class ProjectController : ApiController
     {
-        public List<ProjectViewModel> Get()
+        public ResponseModel Get()
         {
             ProjectService service = new ProjectService();
-            List<ProjectViewModel> projects = service.GetAll();
-            return projects;
+            ResponseModel response;
+            try
+            {
+                List<ProjectViewModel> projects = service.GetAll();
+                response = new ResponseModel(projects);
+            }
+            catch (Exception)
+            {
+
+                response = new ResponseModel(null, false, "Error occured!");
+            }
+            return response;
             
         }
     }
