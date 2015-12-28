@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using TaskManagement.Services;
 using TaskManagement.ViewModel;
 
 namespace TaskManagement.WebApi.Controllers
@@ -12,7 +13,10 @@ namespace TaskManagement.WebApi.Controllers
     {
         public List<ProjectViewModel> Get()
         {
-            return new List<ProjectViewModel>() {new ProjectViewModel() {Id = 1, Name = "Test", Count = 0}};
+            ProjectService service = new ProjectService();
+            List<ProjectViewModel> projects = service.GetAll();
+            return projects;
+            
         }
     }
 }
