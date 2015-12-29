@@ -1,4 +1,4 @@
-﻿angular.module('tasklist').controller('dashboardService', ['$resource', '$q', function($resource, $q) {
+﻿angular.module('tasklist').service('dashboardService', ['$resource', '$q', function($resource, $q) {
     var baseUrl = 'http://localhost:57793/api/';
     var getAll = function () {
         var defer = $q.defer();

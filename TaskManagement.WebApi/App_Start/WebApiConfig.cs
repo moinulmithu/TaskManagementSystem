@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Formatting;
+using System.Web.Cors;
 using System.Web.Http;
+using System.Web.Http.Cors;
+
 
 namespace TaskManagement.WebApi
 {
@@ -11,6 +14,9 @@ namespace TaskManagement.WebApi
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+          
+            ICorsPolicyProvider provider = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(provider);
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
             // Web API routes
