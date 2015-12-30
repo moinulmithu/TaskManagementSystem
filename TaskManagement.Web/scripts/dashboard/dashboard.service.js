@@ -3,7 +3,7 @@
     var getAll = function () {
         var defer = $q.defer();
         var resource = $resource(baseUrl + 'Project');
-        resource.get(function(resource) {
+        resource.get(function (response) {
             return defer.resolve(response);
         }, function(error) {
             return defer.reject(error);

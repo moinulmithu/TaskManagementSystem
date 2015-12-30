@@ -11,7 +11,7 @@
         <li role="presentation"><a href="#work" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i>Work<span class="count">(2)</span></a></li>
         <li role="presentation"><a href="#shopping" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i>Shopping<span class="count">(0)</span></a></li>
         <li role="presentation"><a href="#family" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i>Family<span class="count">(0)</span></a></li>-->
-        <li role="presentation" ng-repeat="p in projects" ng-click="loadTasks(p)"><a href="javascript:void(0)" aria-controls="settings"><i class="fa fa-circle-thin"></i>{{p}}<span class="count">(0)</span></a></li>
+        <li role="presentation" ng-repeat="p in projects" ng-click="loadTasks(p)"><a href="javascript:void(0)" aria-controls="settings"><i class="fa fa-circle-thin"></i>{{p.Name}}<span class="count">({{p.Count}})</span></a></li>
     </ul>
     <button class="btn btn-default" type="button"><i class="fa fa-plus"></i>Add Project</button>
 </div>
