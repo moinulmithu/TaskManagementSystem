@@ -101,6 +101,7 @@
     <Content Include="styles\font-awesome.min.css" />
     <Content Include="styles\style.css" />
     <Content Include="views\dashboard\dashboard.tpl.html" />
+    <Content Include="views\projects\createProject.tpl.html" />
     <Content Include="views\projects\project.tpl.html" />
     <Content Include="views\projects\projectDetail.tpl.html" />
     <Content Include="views\tasks\task.tpl.html" />
