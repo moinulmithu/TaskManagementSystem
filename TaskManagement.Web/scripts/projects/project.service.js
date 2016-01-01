@@ -1,16 +1,17 @@
-﻿angular.module('tasklist').service('dashboardService', ['$resource', '$q', function($resource, $q) {
+﻿angular.module('tasklist').service('projectService', ['$resource', '$q', function ($resource, $q) {
     var baseUrl = 'http://localhost:57793/api/';
-    var getAll = function() {
+
+    var save = function(project) {
         var defer = $q.defer();
         var resource = $resource(baseUrl + 'Project');
-        resource.get(function(response) {
+        resource.save(project,function (response) {
             return defer.resolve(response);
-        }, function(error) {
+        }, function (error) {
             return defer.reject(error);
         });
         return defer.promise;
     };
     return {
-        getAll: getAll
-    };
+        save: save
+};
 }]);
