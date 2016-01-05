@@ -97,6 +97,8 @@
     <Content Include="scripts\projects\projectdetail.controller.js" />
     <Content Include="scripts\projects\projects.controller.js" />
     <Content Include="scripts\tasklist.js" />
+    <Content Include="scripts\tasks\createTask.controller.js" />
+    <Content Include="scripts\tasks\task.service.js" />
     <Content Include="scripts\tasks\tasks.controller.js" />
     <Content Include="scripts\tasks\taskdetail.controller.js" />
     <Content Include="styles\bootstrap.min.css" />
@@ -106,6 +108,7 @@
     <Content Include="views\projects\createProject.tpl.html" />
     <Content Include="views\projects\project.tpl.html" />
     <Content Include="views\projects\projectDetail.tpl.html" />
+    <Content Include="views\tasks\createTask.tpl.html" />
     <Content Include="views\tasks\task.tpl.html" />
     <Content Include="views\tasks\taskDetail.tpl.html" />
     <Content Include="Web.config" />

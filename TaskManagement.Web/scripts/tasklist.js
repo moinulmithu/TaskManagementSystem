@@ -7,6 +7,7 @@ angular.module('tasklist', ['ngRoute', 'ngResource'])
                         .when('/createProject', { templateUrl: 'views/projects/createProject.tpl.html', controller: 'createProjectcontroller' })
                         .when('/projectdetail/:id', { templateUrl: 'views/projects/projectdetail.tpl.html', controller: 'projectdetailcontroller' })
                         .when('/tasks', { templateUrl: 'views/tasks/task.tpl.html', controller: 'taskController' })
+                        .when('/createTask', { templateUrl: 'views/tasks/createTask.tpl.html', controller: 'createTaskcontroller' })
                         .when('/taskdetail/:id', { templateUrl: 'views/tasks/taskDetail.tpl.html', controller: 'taskdetailController' })
          .otherwise({ redirecTo: '/' });
     }]);
