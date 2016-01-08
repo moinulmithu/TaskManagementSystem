@@ -1,4 +1,4 @@
-﻿angular.module('tasklist').controller('dashboardController', ['$scope', 'dashboardService', function ($scope, dashboardService) {
+﻿angular.module('tasklist').controller('dashboardController', ['$scope', 'dashboardService', 'projectService', function ($scope, dashboardService, projectService) {
     $scope.pagename = 'dashboard';
     $scope.projects = [];
         $scope.selectedProject = '';
@@ -12,7 +12,7 @@
 
 
         $scope.loadProjects = function () {
-            dashboardService.getAll().then(function (response) {
+            projectService.getAll().then(function (response) {
                 console.log(response);
                 if (response.IsSuccess) {
                     $scope.projects = response.Data;

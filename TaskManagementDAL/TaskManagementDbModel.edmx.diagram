@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="0a50a2bf92ba4b8699c9d4f219e23218" Name="Diagram1">
         <EntityTypeShape EntityType="TaskManagementDbModel.Project" Width="1.5" PointX="0.75" PointY="1" />
-        <EntityTypeShape EntityType="TaskManagementDbModel.Task" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="TaskManagementDbModel.Task" Width="1.5" PointX="3" PointY="0.75" />
         <AssociationConnector Association="TaskManagementDbModel.FK_Task_Project" />
       </Diagram>
     </edmx:Diagrams>

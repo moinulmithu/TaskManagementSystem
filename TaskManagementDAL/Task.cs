@@ -18,6 +18,7 @@ namespace TaskManagementDAL
         public string Name { get; set; }
         public System.DateTime DueDate { get; set; }
         public int ProjectId { get; set; }
+        public int Priority { get; set; }
         public System.DateTime Changed { get; set; }
         public System.DateTime Created { get; set; }
     

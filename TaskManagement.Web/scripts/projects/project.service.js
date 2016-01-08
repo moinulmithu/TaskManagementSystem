@@ -11,7 +11,18 @@
         });
         return defer.promise;
     };
+    var getAll = function() {
+        var defer = $q.defer();
+        var resource = $resource(baseUrl + 'Project');
+        resource.get(function(response) {
+            return defer.resolve(response);
+        }, function(error) {
+            return defer.reject(error);
+        });
+        return defer.promise;
+    };
     return {
-        save: save
-};
+        save: save,
+        getAll: getAll
+    };
 }]);
