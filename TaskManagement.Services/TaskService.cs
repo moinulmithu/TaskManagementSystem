@@ -18,13 +18,13 @@ namespace TaskManagement.Services
             return list;
         }
 
-        public int Save(Task Task)
+        public int Save(Task task)
         {
             
             TaskManagementDbEntities db = new TaskManagementDbEntities();
-            //Task.CreatedDate = DateTime.Now;
-            //Task.ChangedDate = DateTime.Now;
-            Task added = db.Tasks.Add(entity: Task);
+            task.Created = DateTime.Now;
+            task.Changed = DateTime.Now;
+            Task added = db.Tasks.Add(entity: task);
             db.SaveChanges();
             return added.Id;
         }
